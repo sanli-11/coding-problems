@@ -1,0 +1,15 @@
+{
+  "name": "coding-problems",
+  "version": "1.0.0",
+  "description": "Solving Coding Problems on sites like([Leetcode](https://leetcode.com)), [HackerRank](https://www.hackerrank.com), [Atcoder](https://atcoder.jp/) and [CodeForces](https://codeforces.com)",
+  "main": "1/Two-Sum.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "San Li",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
