@@ -1,4 +1,4 @@
-const removeDuplicates = (nums) => {
+const removeDuplicatesUsingSet = (nums) => {
   const uniqueItems = [...new Set(nums)];
 
   nums.length = 0;
@@ -7,4 +7,4 @@ const removeDuplicates = (nums) => {
   return nums.length;
 };
 
-module.exports = { removeDuplicates };
+module.exports = { removeDuplicatesUsingSet };
