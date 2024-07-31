@@ -8,7 +8,8 @@ class TwoSum {
 
     private static final Logger logger = Logger.getLogger(TwoSum.class.getName());
 
-    public int[] twoSum(int[] nums, int target) {
+    //* Using HashMap - Slower than Nested Loops
+    public int[] twoSumHashmap(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
@@ -19,6 +20,21 @@ class TwoSum {
             }
 
             map.put(nums[i], i);
+        }
+
+        return new int[0];
+    }
+
+    //* Using Nested Loops - Faster than HashMap
+    public int[] twoSum(int[] nums, int target) {
+        for (int i = 1; i < nums.length; i++) {
+            for (int j = i; j < nums.length; j++) {
+                int k = j - i;
+
+                if (nums[k] + nums[j] == target) {
+                    return new int[]{k, j};
+                }
+            }
         }
 
         return new int[0];
